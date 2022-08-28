@@ -1,0 +1,87 @@
+.players{
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 300px));
+    place-items: center;
+    justify-content: center;
+    gap: 30px;
+
+    > div{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        border: 1px solid rgb(40, 40, 40);
+        border-radius: 10px;
+        padding: 16px 24px 20px;
+        width: 100%;
+
+        > img{
+            display: block;
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+
+        h3{
+            gap: 8px;
+            align-items: center;
+            font-size: .95rem;
+            margin: 12px 0;
+        }
+
+        p{
+            font-weight: 200;
+        }
+    }
+}
+
+.button{
+    user-select: none;
+    cursor: pointer;
+    display: block;
+    outline: none;
+    border: none;
+    background-color: rgb(98, 229, 86);
+    color: rgb(10, 10, 10);
+    border-radius: 50px;
+    margin-top: 13px;
+    padding: 8px 16px;
+    font-weight: 300;
+    font-size: .8rem;
+    text-decoration: none;
+    transition: transform .2s ease;
+
+    &:active{
+        transform: scale(.9);
+    }
+}
+
+.emblemas{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+    span{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        line-height: 1;
+        font-weight: 300;
+        font-size: .8rem;
+        border-radius: 20px;
+        padding: 5px 16px;
+        border: 1px solid rgb(40, 40, 40);
+
+        &.platform{
+            font-size: 1.1rem;
+
+            svg{
+                height: 100%;
+                width: 100%;
+            }
+        }
+    }
+}
